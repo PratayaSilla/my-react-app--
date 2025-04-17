@@ -1,38 +1,80 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body, html, #root {
   height: 100%;
 }
-#root{
+
+#root {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
-  font-family: sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.maindiv{
+
+.maindiv {
   text-align: center;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 2rem 3rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
+  max-width: 400px;
+  width: 100%;
 }
-.childdiv{
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.childdiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
 }
-.btn {
-  width: fit-content;
-}
+
+.btn,
 .resetbtn {
-  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 70px;
+}
+
+.btn:hover,
+.resetbtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn:active,
+.resetbtn:active {
+  transform: scale(0.97);
+}
+
+.resetbtn {
+  background-color: #dc3545;
+}
+
+.resetbtn:hover {
+  background-color: #a71d2a;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #555;
 }
